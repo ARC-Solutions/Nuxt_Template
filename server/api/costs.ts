@@ -1,4 +1,4 @@
-import db from '../utils/db.drizzle';
+import { db } from '../utils/db.drizzle';
 import { costsData } from '../../drizzle/schema';
 
 export default defineEventHandler( async () => {
