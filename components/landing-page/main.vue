@@ -1,7 +1,7 @@
 <script setup lang="ts">
-  import { Github } from 'lucide-vue-next';
+import { Github } from 'lucide-vue-next';
 
-  const { data } = await useFetch('/api/hello/ricky');
+const { data } = await useFetch('/api/hello/ricky');
 </script>
 
 <template>
