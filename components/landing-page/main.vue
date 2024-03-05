@@ -1,5 +1,7 @@
 <script setup lang="ts">
   import { Github } from 'lucide-vue-next';
+
+  const { data } = await useFetch('/api/hello/ricky');
 </script>
 
 <template>
@@ -18,6 +20,7 @@
               <Github />
               Use Template
             </Button>
+            <pre>{{ data.body.message }}</pre>
           </div>
         </div>
       </section>
